@@ -9,6 +9,7 @@ gem "sequel"
 
 group :test, :development do
   gem "pry-byebug"
+  gem "factory_girl"
 end
 
 group :development do

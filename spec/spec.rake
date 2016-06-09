@@ -2,6 +2,7 @@ begin
   require 'rspec/core/rake_task'
 
   spec_tasks = Dir['spec/*/'].each_with_object([]) do |d, result|
+    next if File.basename(d) == "factories"
     result << File.basename(d) unless Dir["#{d}*"].empty?
   end
 
@@ -9,7 +10,7 @@ begin
     desc "Run the spec suite in #{folder}"
     RSpec::Core::RakeTask.new("spec:#{folder}") do |t|
       t.pattern = "./spec/#{folder}/**/*_spec.rb"
-      t.rspec_opts = "--color"
+      t.rspec_opts = "--color --format documentation --order rand"
     end
   end
 

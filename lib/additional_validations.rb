@@ -1,8 +1,8 @@
 module Sequel
   class Model
-    def validates_at_least_one(atts)
-      atts = Array(atts)
-      errors.add(:base, "At least one of the following attributes must be present: #{atts}") unless values.any? { |k, v| v.present? }
+    def validates_at_least_one(attrs)
+      atts = Array(attrs)
+      errors.add(:base, "At least one of the following attributes must be present: #{atts}") unless atts.any? { |attr| send(attr).present? }
     end
   end
 end

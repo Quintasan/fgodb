@@ -5,6 +5,9 @@ Sequel.migration do
       String :first_name
       String :nickname
       String :last_name
+
+      Time :created_at
+      Time :updated_at
     end
   end
 end

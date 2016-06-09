@@ -5,4 +5,4 @@ PadrinoTasks.use(:database)
 PadrinoTasks.use(:sequel)
 PadrinoTasks.init
 
-task :default => :test
+task :default => :spec

@@ -1,4 +1,6 @@
-Sequel::Model.plugin(:schema)
+Sequel.extension :blank
+Sequel.default_timezone = :utc
+Sequel::Model.plugin :schema
 Sequel::Model.plugin :auto_validations
 Sequel::Model.plugin :prepared_statements
 Sequel::Model.plugin :prepared_statements_safe

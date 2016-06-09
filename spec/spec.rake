@@ -10,7 +10,6 @@ begin
     desc "Run the spec suite in #{folder}"
     RSpec::Core::RakeTask.new("spec:#{folder}") do |t|
       t.pattern = "./spec/#{folder}/**/*_spec.rb"
-      t.rspec_opts = "--color --format documentation --order rand"
     end
   end
 

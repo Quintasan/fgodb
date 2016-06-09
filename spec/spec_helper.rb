@@ -14,6 +14,10 @@ RSpec.configure do |conf|
       example.run
     end
   end
+  conf.color = true
+  conf.tty = true
+  conf.formatter = :documentation
+  conf.order = :random
 end
 
 # You can use this method to custom specify a Rack app

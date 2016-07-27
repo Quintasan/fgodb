@@ -26,7 +26,7 @@ RSpec.describe ServantRarity do
     expect(servant_rarity.errors.count).to eq(1)
   end
 
-  it "maximum level can't be negativea" do
+  it "maximum level can't be negative" do
     servant_rarity = build(:servant_rarity, max_level: -1)
     expect(servant_rarity.valid?).to be_falsey
     expect(servant_rarity.errors.count).to eq(1)

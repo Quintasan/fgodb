@@ -15,6 +15,7 @@ group :test, :development do
 end
 
 group :development do
+  gem "bundler-audit", require: false
   gem "rubocop", require: false
   gem "thin"
 end

@@ -1,10 +1,8 @@
 Sequel.extension :blank
 Sequel.default_timezone = :utc
-Sequel::Model.plugin :schema
 Sequel::Model.plugin :auto_validations
 Sequel::Model.plugin :prepared_statements
 Sequel::Model.plugin :prepared_statements_safe
-Sequel::Model.plugin :prepared_statements_associations
 Sequel::Model.plugin :validation_helpers
 Sequel::Model.plugin :boolean_readers
 Sequel::Model.plugin :timestamps, update_on_create: true

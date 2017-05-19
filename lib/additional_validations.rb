@@ -1,3 +1,5 @@
+require 'active_support/core_ext/object/blank'
+
 module Sequel
   class Model
     def validates_at_least_one(attrs)

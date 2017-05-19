@@ -20,8 +20,9 @@ GEM
     eventmachine (1.2.3)
     factory_girl (4.8.0)
       activesupport (>= 3.0.0)
-    haml (5.0.1)
+    hamlit (2.8.1)
       temple (>= 0.8.0)
+      thor
       tilt
     i18n (0.8.1)
     mail (2.6.5)
@@ -132,7 +133,7 @@ DEPENDENCIES
   bundler-audit
   database_cleaner
   factory_girl
-  haml
+  hamlit
   padrino (~> 0.14.0)
   pry-byebug
   rack-test

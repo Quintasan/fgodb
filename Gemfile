@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem "haml"
+gem "hamlit"
 gem "padrino", "~> 0.14.0"
 gem "rake"
 gem "sass"

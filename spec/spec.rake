@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 begin
   require 'rspec/core/rake_task'
 
@@ -21,4 +23,4 @@ rescue LoadError
   end
 end
 
-task :default => :spec
+task default: :spec

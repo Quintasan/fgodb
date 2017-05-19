@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ##
 # This file mounts each app in the Padrino project to a specified sub-uri.
 # You can mount additional applications using any of these commands below:
@@ -28,9 +30,9 @@
 Padrino.configure_apps do
   # enable :sessions
   set :session_secret, '30c15278f78ab86c60373cb14bbeb6cb305e213f5ab4cd91f0ce5e659727fbff'
-  set :protection, :except => :path_traversal
+  set :protection, except: :path_traversal
   set :protect_from_csrf, true
 end
 
 # Mounts the core application for this project
-Padrino.mount('Fgodb::App', :app_file => Padrino.root('app/app.rb')).to('/')
+Padrino.mount('Fgodb::App', app_file: Padrino.root('app/app.rb')).to('/')

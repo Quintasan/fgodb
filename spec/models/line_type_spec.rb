@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 RSpec.describe LineType do
-
   it "can be created" do
     line_type = build(:line_type)
     expect(line_type).not_to be_nil
@@ -16,7 +17,6 @@ RSpec.describe LineType do
   end
 
   it "must have a unique name" do
-    line_type = create(:line_type, name: "Test")
     line_type = build(:line_type, name: "Test")
     expect(line_type.valid?).to be_falsey
     expect(line_type.errors.count).to eq(1)

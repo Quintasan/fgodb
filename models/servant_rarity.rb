@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ServantRarity < Sequel::Model
   def validate
     super
@@ -8,5 +10,4 @@ class ServantRarity < Sequel::Model
     validates_integer :max_level, allow_nil: true
     validates_includes [65, 60, 65, 70, 80, 90], :max_level, allow_nil: true
   end
-
 end

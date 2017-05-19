@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Line < Sequel::Model
   many_to_one :line_type
   def validate

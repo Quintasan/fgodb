@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CraftEssenceRarity < Sequel::Model
   def validate
     super
@@ -8,5 +10,4 @@ class CraftEssenceRarity < Sequel::Model
     validates_integer :max_level, allow_nil: true
     validates_includes [50, 55, 60, 80, 100], :max_level, allow_nil: true
   end
-
 end

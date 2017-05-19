@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Sequel.migration do
   change do
     create_table :noble_phantasm_types do
@@ -8,5 +10,4 @@ Sequel.migration do
       Time :updated_at
     end
   end
-
 end

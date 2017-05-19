@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Rank < Sequel::Model
   def validate
     super

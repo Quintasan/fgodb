@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "padrino", "0.13.2"
+gem "padrino", "~> 0.14.0"
 gem "rake"
 gem "sass"
 gem "haml"

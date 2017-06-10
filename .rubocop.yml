@@ -10,3 +10,6 @@ AllCops:
 
 Metrics/BlockLength:
   Enabled: false
+
+Lint/ScriptPermission:
+  Enabled: false

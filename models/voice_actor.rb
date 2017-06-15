@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class VoiceActor < Sequel::Model
+  skip_auto_validations(:not_null)
   def validate
     super
     validates_at_least_one %i[first_name nickname last_name]

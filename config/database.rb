@@ -2,7 +2,7 @@
 
 Sequel.extension :blank
 Sequel.default_timezone = :utc
-Sequel::Model.plugin :auto_validations
+Sequel::Model.plugin :auto_validations, not_null: :presence
 Sequel::Model.plugin :prepared_statements
 Sequel::Model.plugin :prepared_statements_safe
 Sequel::Model.plugin :validation_helpers

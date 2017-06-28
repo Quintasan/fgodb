@@ -2,9 +2,9 @@
 
 ## Dependencies
 
-Ruby >= 2.3.0
-Padrino >= 0.13.2
-Sequel >= 4.35
+1. Ruby >= 2.4.1
+2. Sequel >= 4.35
+3. Padrino >= 0.14.0
 
 ## Installation
 

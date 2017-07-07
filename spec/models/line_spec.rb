@@ -17,5 +17,9 @@ RSpec.describe Line do
     line = build(:line, text: nil)
     expect(line.valid?).to be_falsey
     expect(line.errors.count).to eq(1)
+
+    line = build(:line, text: "")
+    expect(line.valid?).to be_falsey
+    expect(line.errors.count).to eq(1)
   end
 end

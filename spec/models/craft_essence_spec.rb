@@ -17,6 +17,9 @@ RSpec.describe CraftEssence do
   it "must have a name" do
     craft_essence.name = nil
     expect(craft_essence).not_to be_valid
+
+    craft_essence.name = ""
+    expect(craft_essence).not_to be_valid
   end
   it "must provide a minimum HP bonus" do
     craft_essence.min_hp_bonus = nil
@@ -37,6 +40,9 @@ RSpec.describe CraftEssence do
   it "must have an effect" do
     craft_essence.effect = nil
     expect(craft_essence).not_to be_valid
+
+    craft_essence.effect = ""
+    expect(craft_essence).not_to be_valid
   end
   it "must have a limit broken effect" do
     craft_essence.limit_break = nil
@@ -44,6 +50,9 @@ RSpec.describe CraftEssence do
   end
   it "must have a comment" do
     craft_essence.comment = nil
+    expect(craft_essence).not_to be_valid
+
+    craft_essence.comment = ""
     expect(craft_essence).not_to be_valid
   end
 end

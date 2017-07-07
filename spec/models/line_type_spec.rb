@@ -14,6 +14,9 @@ RSpec.describe LineType do
   it "must have a name" do
     line_type = build(:line_type, name: nil)
     expect(line_type.valid?).to be_falsey
+
+    line_type = build(:line_type, name: "")
+    expect(line_type.valid?).to be_falsey
   end
 
   it "must have a unique name" do

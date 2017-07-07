@@ -4,6 +4,7 @@ source "https://rubygems.org"
 
 gem "hamlit"
 gem "padrino", "~> 0.14.0"
+gem "pg"
 gem "rake"
 gem "sass"
 gem "sequel"

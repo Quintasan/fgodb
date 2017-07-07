@@ -70,6 +70,7 @@ GEM
     parallel (1.11.2)
     parser (2.4.0.0)
       ast (~> 2.2)
+    pg (0.21.0)
     powerpack (0.1.1)
     pry (0.10.4)
       coderay (~> 1.1.0)
@@ -108,7 +109,7 @@ GEM
       unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-progressbar (1.8.1)
     sass (3.4.24)
-    sequel (4.47.0)
+    sequel (4.48.0)
     sinatra (2.0.0)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -137,6 +138,7 @@ DEPENDENCIES
   factory_girl
   hamlit
   padrino (~> 0.14.0)
+  pg
   pry-byebug
   rack-test
   rake

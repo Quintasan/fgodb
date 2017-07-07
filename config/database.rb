@@ -11,7 +11,7 @@ Sequel::Model.plugin :timestamps, update_on_create: true
 Sequel::Model.plugin :update_or_create
 Sequel::Model.raise_on_save_failure = false # Do not throw exceptions on failure
 Sequel::Model.db = case Padrino.env
-                   when :development then Sequel.connect("sqlite://db/fgodb_development.db", loggers: [logger])
-                   when :production  then Sequel.connect("sqlite://db/fgodb_production.db",  loggers: [logger])
-                   when :test        then Sequel.connect("sqlite://db/fgodb_test.db",        loggers: [logger])
+                   when :development then Sequel.connect("postgres://fgodb:fgodb@localhost/fgodb_development", loggers: [logger])
+                   when :production  then Sequel.connect("postgres://fgodb:fgodb@localhost/fgodb_production",  loggers: [logger])
+                   when :test        then Sequel.connect("postgres://fgodb:fgodb@localhost/fgodb_test",        loggers: [logger])
                    end

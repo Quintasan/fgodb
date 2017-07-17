@@ -1,4 +1,4 @@
 # frozen_string_literal: true
 
-class Trait < Sequel::Model
+class Attribute < Sequel::Model
 end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Sequel.migration do
   change do
     create_table :class_skills do
@@ -11,5 +13,4 @@ Sequel.migration do
       Time :updated_at
     end
   end
-
 end

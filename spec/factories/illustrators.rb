@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :illustrator do
     first_name "Takayuki"
     nickname "Tony"

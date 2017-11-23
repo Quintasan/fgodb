@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 begin
-  require "factory_girl"
+  require "factory_bot"
   # Sequel does not have save! method
   if defined?(Sequel)
-    FactoryGirl.define do
+    FactoryBot.define do
       to_create(&:save)
     end
   end
-  FactoryGirl.find_definitions
+  FactoryBot.find_definitions
 end

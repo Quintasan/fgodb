@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :craft_essence do
     game_id { 1 }
     name "Test Craft Essence"

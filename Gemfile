@@ -11,7 +11,7 @@ gem "sequel"
 gem "sqlite3"
 
 group :test, :development do
-  gem "factory_girl"
+  gem "factory_bot"
   gem "pry-byebug"
 end
 
